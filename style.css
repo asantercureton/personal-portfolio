@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    background-color: rgb(225, 229, 236);
+    position: relative;
+}
+
+header {
+    margin-bottom: 16px;
+    position: relative;
+    padding: 8px;   
+}
+
+header nav {
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+    background-color: powderblue;
+}
+
+
+.column {
+    text-align: left;
+}
+
+.intro {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+main {
+    /* background-color: rgb(21, 148, 99); */
+    padding: 4px;
+    margin: 100px;
+    border: 5px solid powderblue;
+}
+
+main p {
+    padding-bottom: 25px;
+    font-size: 125%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: floralwhite;
+    display: flex;
+    justify-content: center;
+}
+
+main a {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    margin-top: 50px;
+    margin-left: 250px;
+    color: rgb(0, 0, 0);
+    font-size: 400%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img {
+    border: 10px solid powderblue;
+}
+
+footer {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* TODO: Use media query to change the width of the cards so they split into two columns at 992px or smaller*/
+@media screen and (max-width: 992px) {
+    main {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .card {
+      width: 50%;
+    }
+  }
+  /* TODO: Use media query to change the width of the cards so they are stacked on top of each other at 768px or smaller */
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+  }
