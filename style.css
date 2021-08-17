@@ -2,48 +2,61 @@
     box-sizing: border-box;
 }
 
+
 body{
     background-color: rgb(162, 226, 255);
     position: relative;
 }
 
+
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
     margin-bottom: 16px;
-    position: relative;
-    padding: 8px;   
+    padding: 5px;   
+    background-color: rgb(5, 122, 126);
 }
+
 
 header nav {
     text-decoration: underline;
 }
 
+
 nav {
-    display: flex;
-    justify-content: flex-end;
-    padding: 16px;
-    background-color: rgb(5, 122, 126);
+    
 }
 
-main h2:hover {
-    box-shadow: 0 0 40px 1px rgb(140, 214, 43);
+
+.work img:hover {
+    box-shadow: 0 0 40px 1px rgb(99, 0, 180);
     transition: all 0.25s ease;
 }
+
+
+.contact-me a:hover {
+    box-shadow: 0 0 10px 1px rgb(212, 145, 0);
+    transition: all 0.25s ease;
+}
+
 
 .intro {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
+
 main {
     /* background-color: rgb(21, 148, 99); */
     padding: 4px;
-    margin-bottom: 50px;
     margin-top: 10px;
     /* border: 5px solid rgb(5, 122, 126); */
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    border-bottom: 5px solid rgb(255, 255, 255);
+    border-bottom: 5px solid rgb(5, 122, 126);
 }
 
 
@@ -52,6 +65,7 @@ main article {
     justify-content: space-evenly;
 }
 
+
 main h2 {
     text-align: right;
     border-right: 8px solid rgb(126, 126, 0);
@@ -59,10 +73,12 @@ main h2 {
     color: rgb(0, 49, 49);
 }
 
+
 main img {
     border-radius: 25px;
     border: 8px solid rgb(5, 122, 126);
 }
+
 
 main p {
     padding-bottom: 15px;
@@ -75,18 +91,23 @@ main p {
     margin-top: 10px;
     margin-left: 30px;
     margin-right: 75px;
+    border-radius: 16px;
 }
+
 
 main a {
     display: flex;
     justify-content: center;
 }
 
+
 h1 {
+    align-self: flex-start;
     font-size: 300%;
-    background-color: seagreen;
     color: seashell;
+    text-align: left;
 }
+
 
 h2 {
     text-decoration: none;
@@ -98,25 +119,13 @@ h2 {
 }
 
 
-.experience {
-    /* background-color: rgb(21, 148, 99); */
-    padding: 4px;
-    margin-bottom: 50px;
-    margin-top: 10px;
-    /* border: 5px solid rgb(5, 122, 126); */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    border-bottom: 5px solid rgb(255, 255, 255);
-}
-
 .work {
     display: flex;
     padding: 10px;
-    margin-bottom: 10px;
-    margin-top: 5px;
-    border-bottom: 5px solid rgb(19, 131, 25);
+    border-bottom: 5px solid rgb(5, 122, 126);
+    background-color: rgb(231, 255, 242);
 }
+
 
 .work h2 {
     display: flex;
@@ -128,12 +137,14 @@ h2 {
     color: rgb(0, 49, 49);
 }
 
+
 .work img {
     border-radius: 25px;
     margin-top: 35px;
     border: 5px solid rgb(255, 255, 255);
     margin-left: 20px;
 }
+
 
 .work article div {
     display: flex;
@@ -144,48 +155,49 @@ h2 {
 
 .contact-me {
     padding: 10px;
-    margin-bottom: 10px;
     margin-top: 5px;
     display: flex;
-    border-bottom: 5px solid rgb(19, 131, 25);
+    border-bottom: 5px solid rgb(5, 122, 126);
 }
 
+
 .contact-me h2 {
+    word-wrap: break-word;
     display: flex;
     text-align: right;
-    margin-right: 5px;
+    margin-right: 7px;
+    margin-left: 25px;
     padding-right: 5px;
-    border-bottom: 8px solid rgb(126, 126, 0);
+    border-right: 8px solid rgb(126, 126, 0);
     color: rgb(0, 49, 49);
 }
+
 
 .contact-me div {
     display: flex;
     flex-direction: column;
 }
 
+
 .contact-me article {
-    padding: 8px;
+    padding: 16px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 150%;
+    margin: 10px;
 }
 
-.contact-me a {
-    /* display: flex;
-    justify-content: space-around; */
-}
 
 footer {
-    position: absolute;
-    margin-top: 32px;
     text-align: center;
-    font-size: 15px;
+    background-color: rgb(231, 255, 242);
 }
+
 
 hero {
     display: flex;
     justify-content: flex-end;
 }
+
 
 /* TODO: Use media query to change the width of the cards so they split into two columns at 992px or smaller*/
 @media screen and (max-width: 992px) {
