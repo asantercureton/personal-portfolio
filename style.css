@@ -21,7 +21,8 @@ header {
 
 
 header nav {
-    text-decoration: underline;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -189,7 +190,7 @@ h2 {
 
 footer {
     text-align: center;
-    background-color: rgb(231, 255, 242);
+    /* background-color: rgb(231, 255, 242); */
 }
 
 
