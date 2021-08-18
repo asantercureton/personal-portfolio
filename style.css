@@ -26,21 +26,36 @@ header nav {
 }
 
 
-nav {
-    
-}
-
-
 .work img:hover {
     box-shadow: 0 0 40px 1px rgb(99, 0, 180);
-    transition: all 0.25s ease;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    width: 100%;
+    transition: .5s ease;
 }
 
+.overlay2:hover{
+    visibility: visible;
+}
 
 .contact-me a:hover {
     box-shadow: 0 0 10px 1px rgb(212, 145, 0);
     transition: all 0.25s ease;
 }
+
+
+.overlay2 {
+    position: relative;    
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    visibility: visible;
+    width: 100%;
+    transition: .5s ease;
+    color: rgb(160, 255, 242);
+    font-size: 20px;
+    padding: 20px;
+  }
+
 
 
 .intro {
@@ -150,7 +165,7 @@ h2 {
 .work article div {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -10px;
+    margin-top: -25px;
 }
 
 
