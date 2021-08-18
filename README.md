@@ -9,10 +9,10 @@ Designed a clean professional web portfolio using html and css to display About 
 
 
 ## Links
-[Source Code](https://github.com/asantercureton/personal-portfolio)
+[Source Code](https://github.com/asantercureton/personal-portfolio/)
 
 
-<!-- [Description Link](https://asantercureton.github.io/personal-portfolio) -->
+[Description Link](https://asantercureton.github.io/personal-portfolio/)
 
 
 ## Usage
